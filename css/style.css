@@ -1,0 +1,406 @@
+:root {
+  --slate: #434455;
+  --navy-blue: #2e2f42;
+  --cornflower: #e7e9fc;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --white: #fff;
+  --cloud: #f4f4fd;
+  --grey: #2e2f42;
+}
+
+
+/*
+=========================================
+      Base styles
+=========================================
+*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; padding-left: 0
+}
+ul, ol { margin-top: 0; margin-bottom: 0; padding-left: 0; }
+img { display: block; max-width: 100%; height: auto; }
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--slate);
+  background: var(--white);
+}
+
+.container { 
+  width: 1158px;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right:  15px;
+  margin-left:  auto;
+  margin-right:  auto;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/*
+=========================================
+      Header
+=========================================
+*/
+
+.top-line .container {
+  display: flex;
+  align-items: center; 
+  border-bottom: 1px solid var(--cornflower);
+}
+
+
+
+.placement-in-a-line {
+  display: flex;
+  
+  gap: 40px; 
+
+}
+
+
+.placement-in-a-line .list {
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-right: auto;
+
+}
+
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+  margin-right:  76px;
+}
+
+.logo-studio {
+  color: var(--navy-blue);
+}
+
+.text-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-right: auto;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-box {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.contact-box:hover,
+.contact-box:focus {
+  color: var(--ocean);
+}
+
+
+/* Main
+=============================================
+   1. Effective Solutions for Your Business
+=============================================
+*/
+.title-background-box {
+  padding: 188px 0;
+  background: var(--navy-blue);
+  background-image: linear-gradient(rgba(var(--grey), 0.4), rgba(var(--grey), 0.4)), url("../images/hero/people-office1.jpg"); 
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.title-box .container {
+  width: 1358px;
+  padding: 188px auto;
+  
+}
+
+.main-title {
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: none;
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--ocean);
+  cursor: pointer;
+}
+
+/* 
+=============================================
+   2. Advantages
+=============================================
+*/
+.main-advantages-section {
+  padding: 120px 0;
+}
+
+.advantages-gap {
+  gap: 24px;
+}
+
+.advantages-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.advantages-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.opportunities-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+/* 
+=============================================
+   3. What are we doing
+=============================================
+*/
+.main-opportunities-section {
+  padding-bottom: 120px;
+}
+
+.op-line {
+  gap: 24px;
+}
+.opportunities-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+/* 
+=============================================
+   4. Our Team
+=============================================
+*/
+.main-section-team {
+  background: var(--cloud);
+  padding: 120px 0;
+}
+.op-team {
+  gap: 24px;
+}
+.team-title {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 36px;
+line-height: 111%;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+color: var(--navy-blue);
+}
+
+.card {
+  border-radius: 0 0 4px 4px;
+  background: var(--white);
+  text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.card-text {
+  padding: 32px 16px;}
+
+/* 
+=============================================
+   Portfolio
+=============================================
+*/
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-button-box {
+  margin-bottom: 72px;
+  gap: 24px;
+  justify-content: center;
+}
+.portfolio-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  border-radius: 4px;
+  padding: 12px 24px;
+  width: auto;
+  height: 48px;
+  border: none;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #fff;
+  background-color: #404bbf;
+  cursor: pointer;
+  
+}
+
+.description-project-card {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+.card-project-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.card-project-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.project-cards {
+  flex-wrap: wrap;
+
+  align-items: center; 
+  justify-content: center  ;
+
+}
+.card-of-project {
+  width: 360px;
+  height: 420px;
+}
+/* 
+=============================================
+   Footer
+=============================================
+*/
+.logo-studio-footer {
+  color: var(--cloud, #f4f4fd);
+  padding-bottom: 24px;
+}
+
+.footer-box {
+  background: var(--navy-blue);
+  padding: 120px 0;
+  
+}
+
+.paragraf-box {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+  width: 264px;
+  margin-top: 16px;
+}
