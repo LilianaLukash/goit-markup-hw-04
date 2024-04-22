@@ -299,6 +299,14 @@ body {
 .op-team {
   gap: 24px;
 }
+
+.team-social-ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+  
+}
 .team-title {
   font-family: var(--font-family);
 font-weight: 700;
@@ -347,7 +355,7 @@ color: var(--navy-blue);
     background-color: var(--iris);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 8px;
-    gap: 24px;
+    
     
 }
 
@@ -393,6 +401,17 @@ color: var(--navy-blue);
 .customers-icon {
   fill: #8E8F99;
 }
+
+.customers-link-list:hover,
+.customers-link-list:focus {
+  border-color: var(--ocean);
+}
+.customers-link-list:hover .customers-icon,
+.customers-link-list:focus .customers-icon {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+}
+
 /* 
 =============================================
    Portfolio
@@ -479,6 +498,15 @@ color: var(--navy-blue);
   padding: 120px 0;
   
 }
+.footer-title{
+  
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
 
 .paragraf-box {
   font-family: var(--font-family);
@@ -489,4 +517,21 @@ color: var(--navy-blue);
   color: var(--cloud);
   width: 264px;
   margin-top: 16px;
+}
+
+.container-f{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  width: 1158px;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soc-wrapper {
+  display: flex; 
+  gap: 16px; 
 }
