@@ -643,71 +643,51 @@ background-color: var(--ocean);
   |============================
   | Modal window
   |============================
-*/
-
-.data-modal {
+*/.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .is-hidden {
-  opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  opacity: 0;
 }
 
-.modal-card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
-  background: var(--dairy);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal {
+  background-color: white; /* Білий фон модального вікна */
+  padding: 20px; /* Внутрішні відступи для модального вікна */
+  border-radius: 8px; /* Закруглені кути модального вікна */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для модального вікна */
 }
 
-.data-modal-close {
+.modal-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--cornflower);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.data-modal-close:hover,
-.data-modal-close:focus {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--white);
 }
 
 .icon-modal {
-  scale: 3;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 16px; /* Збільшення розміру іконки */
+  height: 16px;
+  fill: #333; /* Колір іконки */
 }
 
-.icon-modal:hover,
-.icon-modal:focus {
-  fill: var(--white);
-  fill: #ffffff;
+.icon-modal:hover {
+  fill: red; /* Колір іконки при наведенні */
 }

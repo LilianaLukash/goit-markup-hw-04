@@ -44,7 +44,7 @@
         <section class="title-background-box section">
           <div class="container title-box">
             <h1 class = "main-title" id = "Studio">Effective Solutions of Your Business</h1>
-            <button class="main-button data-modal-open" type="button">Order Service</button>
+            <button  class="main-button" data-modal-open type="button">Order Service</button>
           </div>
         </section>
 
@@ -471,18 +471,19 @@
         </div>
     </footer>
   
-        <!-- Modal window. -->
-        <div class="backdrop" data-modal>
-          <div class="modal">
-            <button class="modal-btn" type="button" data-modal-close>
-              <svg class="icon-modal" width="8" height="8">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <script src="./js/modal.js"></script>
+
       
-    
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button class="modal-btn" type="button" data-modal-close>
+              <svg class="icon-modal" width="8" height="8">
+                  <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+          </button>
+          
+      </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 </html>
