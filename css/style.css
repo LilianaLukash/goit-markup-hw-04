@@ -154,7 +154,9 @@ body {
   border-radius: 2px;
   background-color: var(--ocean);
 }
-
+.current {
+  color: var(--ocean);
+}
 /* Main
 =============================================
    1. Effective Solutions for Your Business
@@ -339,6 +341,7 @@ color: var(--navy-blue);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 8px;
 }
 
 .card-text {
@@ -400,6 +403,7 @@ color: var(--navy-blue);
 
 .customers-icon {
   fill: #8E8F99;
+  
 }
 
 .customers-link-list:hover,
