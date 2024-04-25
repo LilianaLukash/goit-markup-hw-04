@@ -637,8 +637,6 @@ align-items: baseline;
   height: 40px;
 
   
-  
-  
 }
 .link-icons{
   display: flex;
@@ -682,12 +680,8 @@ background-color: #31d0aa;
 .is-hidden {
   opacity: 0;
   visibility: hidden;
-
-
   pointer-events: none;
 }
-
-
 
 
 .modal {
@@ -716,21 +710,23 @@ background-color: #31d0aa;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-background-color: #e7e9fc;
-width: 24px;
-height: 24px;
-padding: 0;
-line-height: 0;
-transition: background-color var(--timimg-function), border var(--timimg-function);
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  line-height: 0;
+  transition: background-color var(--timimg-function), border var(--timimg-function);
 }
 .modal-btn:hover, 
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
 }
+
 .modal-btn:hover > .icon-modal, .modal-btn:focus > .icon-modal {
   fill: var(--white);
 }
+
 .icon-modal {
 transition: fill var(--timimg-function);
   fill: #2e2f42; /* Колір іконки */
